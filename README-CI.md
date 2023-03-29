@@ -14,4 +14,4 @@
 - In order to authenticate via CLI to dockerhub, you can simply use the `docker login` command which will prompt for a username and password. The most secure way of doing this would be to create a 2FA access token through their site. Following `Profile -> Security -> Access Token`, you can create an access token. It is similar to a github key, you need to keep track of the token key because you will not get it again later. This is my recommended route of logging in as not only is it more secure but it is decently convenient.
 - In order to push a container image to Dockerhub, use the command `docker push repo:[tag]`. This is similar to git push.
 - To set a Github secret, follow `Repository Main Page -> Settings -> Secrets` or you may need to follow this `Repository Main Page -> Settings -> Environments -> Select an Environment -> Add Secret`.
-
+- The secrets for this project are going to be one evironment secret and one `${{ secrets.HENRY_CI_SECRET }}` secret. They obviously need to go hand in hand as they coincide with one another.
