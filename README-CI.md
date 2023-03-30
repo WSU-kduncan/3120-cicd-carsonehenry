@@ -1,6 +1,10 @@
 # Part 1 - Dockerize it
 
+## Description
 - For this project I am going to be working closely with Docker and Dockerhub (Docker Desktop as well but that is just the interface software, you dont need to use it). The goal of this would be to successfully create and integrate a Dockerfile with a working container. Inside that container will be webserver files that will operate a working localhost webserver. The reason I am doing this is that containers make the workload portable and compressed. The tools that I will be using are Docker, nginx, and wsl2.
+
+![HENRY-CI-DIAGRAM](images/Henry-CI-DIAGRAM.png)
+
 - You install wsl2 by going into command prompt and running wsl -install, and on ubuntu you can check the version of the wsl you are using by `wsl.exe -l -v`.
 - You install docker by running a series of commands. The first commands are the basic up to date commands like `sudo apt update`. Following this command will be `sudo apt install docker.io` and `sudo snap install docker`. Check to make sure the correct version is installed with `docker --version`.
 - In order to create an image, first we need a `Dockerfile`. The file needs to be named exactly `Dockerfile`. Once the Dockerfile is created, you need to then write the contents. Things like `FROM` to pull the version image, and `RUN` to run the startup commands.
