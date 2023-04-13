@@ -9,7 +9,7 @@ of the project will be to use webhooks to keep up with production.
 
 ## Diagram
 
-
+![HENRY-CD-DIAGRAM](images/HENRY_CD_DIAGRAM.png)
 
 ## Semantic Versioning
 
