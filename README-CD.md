@@ -15,4 +15,6 @@ of the project will be to use webhooks to keep up with production.
 
 ## Deployment
 
-- 
+- To install docker onto an instance, set the install commands inside the template file of the instance. The commands used to install docker are: `sudo get-apt update` followed by `sudo get-apt upgrade` just to make sure you are up to date. Follow these commands with with `sudo apt install docker.io`, `sudo snap install docker`, and  `sudo docker run hello-world`. Remember to add these to the commands that will be run following the creation of the instance inside the yml template file.
+- The container restarting script can be found under /var/lib/docker/containers/. The script will contain the `docker container restart [OPTIONS] CONTAINER [CONTAINER...]` commmand, which will allow the container to successfully restart. This will move the container from the exited state to the running state, which it needs to be in for work to be done inside it.
+- To set up a webhook server, first run the `sudo apt-get install webhook` command. Next comes configuration. Create the script that you want to set up with the hook file and remember where its placed.
